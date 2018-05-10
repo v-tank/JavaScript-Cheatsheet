@@ -106,6 +106,7 @@
 | -------------   |:---------------------:|:--------:|:---------:|
 | Addition       | Adds numbers or strings | +    |    3 + 5; "This is " + "cool!"|
 | Subtraction, Multiplication, Division       | These do what you'd expect them to do in basic math | - , * , /    |    4 - 1; 9 * 2; 12 / 2|
-| Modulo       | Finds the remainder of two numbers | %    |    11 % 3 // Returns 2 |
-| Modulo       | Finds the remainder of two numbers | %    |    11 % 3 // Returns 2 |
-
+| Modulo      | Finds the remainder of two numbers | %    |    11 % 3 // Returns 2 |
+| Assignment  | Assigns a value to a variable | =    | `var testing = 'Tank';`|
+| Equality    | Tests to see if two valueare equal | ===  | `var test = 1; var test2 = 2; test === test2; // Returns false`|
+| Not / Does-not-equal    | Returns the opposite of value it precedes, or checks if a value is not equal to another | !, !==  | ``|
