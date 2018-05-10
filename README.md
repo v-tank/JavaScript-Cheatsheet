@@ -11,27 +11,27 @@
 ### 1. Variable declaration: 
 
   ```
-  var camelCaseString = 'Some string'
+  var camelCaseString = 'Some string';
   ```
   
   ```
-  var camelCaseInt = 24
+  var camelCaseInt = 24;
   ```
 
   ```
-  var camelCaseFloat = 2.40
+  var camelCaseFloat = 2.40;
   ```
 
   ```
-  var camelCaseBoolean = true
+  var camelCaseBoolean = true;
   ```
 
   ```
-  var camelCaseArray = ['Some string', 513, false, [ 1,3,2 ], { someKey: someValue }]
+  var camelCaseArray = ['Some string', 513, false, [ 1,3,2 ], { someKey: someValue }];
   ```
 
   ```
-  var camelCaseObject = { key: value, anotherKey: anotherValue }
+  var camelCaseObject = { key: value, anotherKey: anotherValue };
   ```
 
   ```
@@ -40,8 +40,8 @@
 
   ``` 
   /* 
-  Block level comments
-  look like this 
+    Block level comments
+    look like this 
   */
   ```
 
@@ -102,11 +102,67 @@
 
 ### 4. Operators:
 
-| Operator        | Explanation           | Symbols  | Example   |
-| -------------   |:---------------------:|:--------:|:---------:|
-| Addition       | Adds numbers or strings | +    |    3 + 5; "This is " + "cool!"|
-| Subtraction, Multiplication, Division       | These do what you'd expect them to do in basic math | - , * , /    |    4 - 1; 9 * 2; 12 / 2|
-| Modulo      | Finds the remainder of two numbers | %    |    11 % 3 // Returns 2 |
-| Assignment  | Assigns a value to a variable | =    | `var testing = 'Tank';`|
-| Equality    | Tests to see if two valueare equal | ===  | `var test = 1; var test2 = 2; test === test2; // Returns false`|
-| Not / Does-not-equal    | Returns the opposite of value it precedes, or checks if a value is not equal to another | !, !==  | ``|
+| Operator | Explanation | Symbols | Example |
+|:-------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Addition | Adds numbers or strings | `+` | `3 + 5; "This is " + "cool!"` |
+| Subtraction, Multiplication, Division | These do what you'd expect them to do in basic math | `-` , `*` , `/` | `4 - 1; 9 * 2; 12 / 2` |
+| Modulo | Finds the remainder of two numbers | `%` | ` 11 % 3 // Returns 2 ` |
+| Assignment | Assigns a value to a variable | `=` | `var testing = 'Tank';` |
+| Equality | Tests to see if two values are equal | `===` | `var test = 1; var test2 = 2; test === test2; // Returns false` |
+| Not / Does-not-equal | Returns the logically opposite value of what it precedes; it turns a true into a false, etc. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal. | `!`, `!==` | `var myVariable = 3; !(myVariable === 3); // The basic expression is true, but the comparison returns false because we've negated it. var myVariable = 3; myVariable !== 3; Here we are testing "is myVariable NOT equal to 3". This returns false because myVariable IS equal to 3.` |
+
+### 5. Functions:
+Functions are a way to create some functionality that can be repeated multiple times in your code without rewriting the code each time. They help modularize functionality to help keep the code clean. There are 2 types of functions that are slightly different in terms of syntax as well as the behavior: 
+
+1. Function Declaration
+2. Function Expression
+
+Declarative functions are hoisted to the top of the page when the page loads, which means that we can call the function even before declaring it in the code. As soon as the page loads, the function jumps, or 'hoists', to the top of the page, which makes it available to use throughout the page.
+
+Expression functions are **not** hoisted to the top of the page, so one cannot call a function in the code before it has been declared.  
+
+#### Defining functions without arguments:
+
+1. Function Declaration (hoisted to the top of the page)
+```
+function greetUser() {
+  console.log("Hello, friend! Welcome to the page!");
+}
+```
+or 
+
+2. Function Expression (not hoisted to the top unlike declarations)
+```
+var greeting = function() {
+  console.log("Hello, friend! Welcome to the page!");
+}
+```
+
+#### Defining functions that take in arguments:
+```
+function convertToCelsius(degF){
+
+  // uses the argument variable `degF` to convert to Celsius
+  var degC = (degF - 32) * 5 / 9;
+
+  return degC; // returns the converted value
+}
+```
+
+or 
+```
+var area = function(length, width) {
+  return length * width; // returns the calculated area of a rectangle
+}
+```
+
+#### Calling a function to use 
+```
+greetUser()  // calls function to greet the user without any arguments
+```   
+
+```
+var result = area(20, 10)   // calls function to calculate area of a rectangle by passing in a length (20) and a width (10); will return the calculated value and store it in the 'result' variable
+```
+
+
