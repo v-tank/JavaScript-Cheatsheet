@@ -1,8 +1,8 @@
-# JavaScript-Cheatsheet
+# Cheatsheet
 
 ## Table of Contents 
 
-JavaScript:
+**JavaScript**:
 1. [Variable Declaration](#variable-declaration)
 2. [Conditionals](#conditionals)
   1. [If Statements](#if-statements)
@@ -13,10 +13,11 @@ JavaScript:
 4. [Operators](#operators)
 5. [Functions](#functions)
 
-jQuery:
+**jQuery**:
 1. [Basics](#jq-basics)
 
-  
+*** 
+
 <a name="variable-declaration"></a>
 ### 1. Variable declaration: 
 
