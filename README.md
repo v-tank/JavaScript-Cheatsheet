@@ -2,12 +2,22 @@
 
 ## Table of Contents 
 
-1. [Basics](#Basics)
+JavaScript:
+1. [Variable Declaration](#variable-declaration)
+2. [Conditionals](#conditionals)
+  1. [If Statements](#if-statements)
+  2. [Switch Statements](#switch-statements)
+3. [Loops](#loops) 
+  1. [For Loops](#for-loop)
+  2. [While Loops](#while-loop)
+4. [Operators](#operators)
+5. [Functions](#functions)
 
-<a name="Basics"></a>
+jQuery:
+1. [Basics](#jq-basics)
 
-## 1. Basics
-
+  
+<a name="variable-declaration"></a>
 ### 1. Variable declaration: 
 
   ```
@@ -45,8 +55,10 @@
   */
   ```
 
+<a name="conditionals"></a>
 ###  2. Conditionals: 
 
+<a name="if-statements"></a>
 #### If statements:
 
   ``` 
@@ -59,6 +71,7 @@
   }
   ```
 
+<a name="switch-statements"></a>
 #### Switch statements:
 
   ```
@@ -77,8 +90,10 @@
   }
   ```
 
+<a name="loops"></a>
 ### 3. Loops:
 
+<a name="#for-loop"></a>
 #### For-Loop:
 
   ```
@@ -87,6 +102,7 @@
   }
   ```
 
+<a name="#while-loop"></a>
 #### While-loop:
   ```
   while (someConditional) {
@@ -100,6 +116,7 @@
 
   Note: There are several other types of loops but we can go over those later :) 
 
+<a name="operators"></a>
 ### 4. Operators:
 
 | Operator | Explanation | Symbols | Example |
@@ -111,6 +128,7 @@
 | Equality | Tests to see if two values are equal | `===` | `var test = 1; var test2 = 2; test === test2; // Returns false` |
 | Not / Does-not-equal | Returns the logically opposite value of what it precedes; it turns a true into a false, etc. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal. | `!`, `!==` | `var myVariable = 3; !(myVariable === 3); // The basic expression is true, but the comparison returns false because we've negated it. var myVariable = 3; myVariable !== 3; Here we are testing "is myVariable NOT equal to 3". This returns false because myVariable IS equal to 3.` |
 
+<a name="functions"></a>
 ### 5. Functions:
 Functions are a way to create some functionality that can be repeated multiple times in your code without rewriting the code each time. They help modularize functionality to help keep the code clean. There are 2 types of functions that are slightly different in terms of syntax as well as the behavior: 
 
@@ -168,6 +186,9 @@ var result = area(20, 10)   // calls function to calculate area of a rectangle b
 ---
 
 ## jQuery
+
+<a name="jq-basics"></a>
+### 1. Basics:
 
 #### Referencing existing elements on HTML:
 If an element such as a div or a button already exists on the HTML, we can create a reference to that element using the following syntax in jQuery:
