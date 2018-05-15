@@ -103,7 +103,7 @@
 ### 4. Operators:
 
 | Operator | Explanation | Symbols | Example |
-|:-------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:--------:|-------------|---------|---------|
 | Addition | Adds numbers or strings | `+` | `3 + 5; "This is " + "cool!"` |
 | Subtraction, Multiplication, Division | These do what you'd expect them to do in basic math | `-` , `*` , `/` | `4 - 1; 9 * 2; 12 / 2` |
 | Modulo | Finds the remainder of two numbers | `%` | ` 11 % 3 // Returns 2 ` |
@@ -165,4 +165,23 @@ greetUser()  // calls function to greet the user without any arguments
 var result = area(20, 10)   // calls function to calculate area of a rectangle by passing in a length (20) and a width (10); will return the calculated value and store it in the 'result' variable
 ```
 
+---
 
+## jQuery
+
+#### Referencing existing elements on HTML:
+If an element such as a div or a button already exists on the HTML, we can create a reference to that element using the following syntax in jQuery:
+```
+var someVariable = $("button");   // references a button on the page
+// target a specific class or id using the $(".className") or $("#idName") syntax.
+```
+
+#### Creating a new element dynamically via jQuery:
+To dynamically create a new element using jQuery, we can use the following syntax:
+```
+var newDiv = $("<div>");    // creates an instance of a new div; does not appear on screen yet until appended
+newDiv.attr("class", "mainContent");  // adds a new class called `mainContent` to the newly created div
+
+var existingDiv = $("div");   // creates a reference to some existing parent div on the HTML page that will hold the newDiv
+existingDiv.append(newDiv);   // appends the dynamically created div to existingDiv as a child
+```
